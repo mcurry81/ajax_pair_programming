@@ -1,0 +1,32 @@
+<!doctype html>
+<html>
+	<head>
+		<title>Ajax Pair Program</title>
+
+
+		
+	</head>
+		<body>
+
+			<select id = "option">
+			  <option>CSS</option>
+			  <option>HTML</option>
+			  <option>PHP</option>
+			  <option>XML</option>
+			  <option>JS</option>
+			  <option>SQL</option>
+			</select>
+
+			<button id='show'>Submit</button>
+
+			<div id='detail'></div>
+
+			<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script> 
+			<script>
+			     $('#show').click(function(){
+			     	$('#detail').load('ajax.php',{'word': $('#option').val()});
+
+				});
+			</script> 
+		</body>
+</html>
